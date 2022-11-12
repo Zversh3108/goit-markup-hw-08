@@ -1,0 +1,33 @@
+.about{
+padding-top: 0px;
+}
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  
+  .about__item {
+    position: relative;
+  }
+  
+  .about__discription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }

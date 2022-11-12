@@ -1,0 +1,25 @@
+.clients {
+    background-color: var(--white-color);
+  }
+  
+  .clients__list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .clients__link {
+    outline: 1px solid var(--icon-defult-color);
+    width: 170px;
+    border-radius: 4px;
+    height: 92px;
+    fill: var(--icon-defult-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover, &:focus, &:active {
+      outline-color: var(--brand-color);
+      fill: var(--brand-color);
+    }
+  }

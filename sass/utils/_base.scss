@@ -1,0 +1,49 @@
+.list, h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    color: var(--main-color);
+    background-color: var(--white-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .section {
+    padding: 94px 0px;
+  }
+  
+  .container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+  }
+  
+  .link {
+    text-decoration: none;
+    display: block;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .button {
+    padding: 10px 32px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: var(--brand-color);
+    color: var(--white-color);
+  
+    &:hover, &:focus, &:active {
+      cursor: pointer;
+    }
+  }

@@ -1,0 +1,189 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .modal__close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--white-color);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal {
+    padding: 40px;
+  }
+  
+  .registration {
+    color: var(--secondary-color);
+  }
+  
+  .modal__title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+  
+  .registration, .registration__input-form, .registration__user-data, .registration__user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registration {
+    gap: 20px;
+  }
+  
+  .registration__user-data {
+    gap: 10px;
+  }
+  
+  .registration__input-form {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 11px 42px;
+    border: var(--input-border);
+    border-radius: 4px;
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal__close-button {
+    &:hover, &:active, &:focus {
+      outline-color: var(--brand-color);
+      fill: var(--brand-color);
+      cursor: pointer;
+    }
+  }
+  
+  .input {
+    &:active, &:focus {
+      outline-color: var(--brand-color);
+      fill: var(--brand-color);
+      cursor: pointer;
+    }
+  }
+  
+  .registration__comment-area {
+    &:focus, &:active {
+      outline-color: var(--brand-color);
+      fill: var(--brand-color);
+      cursor: pointer;
+    }
+  }
+  
+  .input:focus + .input-icon {
+    fill: var(--brand-color);
+  }
+  
+  .registration__comment-area {
+    padding: 12px 16px;
+    border: var(--input-border);
+    border-radius: 4px;
+    resize: none;
+    height: 120px;
+  }
+  
+  .policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .policy__checkbox {
+    appearance: none;
+    position: absolute;
+  }
+  
+  .policy__label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 423px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  .policy__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+  }
+  
+  .policy__checkbox:checked + .policy__icon {
+    background-image: url(../images/tick.svg);
+    border: 2px solid var(--brand-color);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--brand-color);
+  }
+  
+  .contract {
+    color: var(--brand-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  .registration__button {
+    padding-left: 52px;
+    padding-right: 52px;
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:active, &:hover {
+      box-shadow: var(--button-shadow);
+    }
+  }
+  
+  .registration_button:focus {
+    box-shadow: var(--button-shadow);
+  }
