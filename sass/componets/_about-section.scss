@@ -1,5 +1,13 @@
 .about{
 padding-top: 0px;
+display: none;
+
+  &__list{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+  }
 
   &__item {
     position: relative;
