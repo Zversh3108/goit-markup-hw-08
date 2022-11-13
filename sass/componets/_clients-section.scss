@@ -1,17 +1,21 @@
 .clients {
     background-color: var(--white-color);
-
   
   
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
+  }
+  &__item{
+    flex-basis: calc((100% - 30px) / 2);
   }
   
   &__link {
     outline: 1px solid var(--icon-defult-color);
-    width: 170px;
+
+
     border-radius: 4px;
     height: 92px;
     fill: var(--icon-defult-color);
