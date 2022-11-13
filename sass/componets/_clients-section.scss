@@ -1,13 +1,13 @@
 .clients {
     background-color: var(--white-color);
-  }
   
-  .clients__list {
+  
+  &__list {
     display: flex;
     gap: 30px;
   }
   
-  .clients__link {
+  &__link {
     outline: 1px solid var(--icon-defult-color);
     width: 170px;
     border-radius: 4px;
@@ -23,3 +23,4 @@
       fill: var(--brand-color);
     }
   }
+}

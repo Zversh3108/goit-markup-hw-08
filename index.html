@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -14,9 +14,10 @@
 <body class="page">
     <header class="header"> 
         <div class="container-header container">
-            <nav class="navigation">
+            <nav class="nav">
                 <a lang="en" class="logo link" href="index.html">Web<span class="logo__word">Studio</span></a>
-                <ul class="nav list">
+
+                <ul class="nav__list list">
                     <li class="nav__item">
                         <a class="nav__link nav__link--active-page link "  href="#">Студія</a>
                     </li >
@@ -44,8 +45,13 @@
                         </svg>
                        +38 096 111 11 11
                     </a>
-                </li>
+                </li>     
             </ul> 
+            <button class="nav__button js-open-menu">
+                <svg class="nav__icon" width = "40px" height="40px">
+                    <use href="symbol-defs.svg#icon-menu" ></use>
+                </svg>
+            </button>   
         </div> 
     </header>
     <main>
@@ -413,7 +419,7 @@
                             <input  class = "policy__checkbox" type="checkbox" name="policy-tick" id="policy">
                             <span class="policy__icon"></span>
                             Погоджуюся з розсилкою та приймаю   
-                            <a class="contract" href="#">Умови договору</a>
+                            <a class="policy__contract" href="#">Умови договору</a>
                         </label>
                         <button type="submit" class="registration__button button">Відправити</button>   
                 </div>           
@@ -425,6 +431,56 @@
             </button>
         </div>
     </div>
+
+    <div class="mobile-menu js-menu-container">
+        <div class="container">
+            <nav class="mobile-menu__nav">  
+                    <ul class = "mobile-menu__nav-list list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="mobile-menu__nav-link link">Студія</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="mobile-menu__nav-link link">Портфоліо</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="mobile-menu__nav-link link">Контакти</a>
+                        </li>
+                    </ul>
+            </nav>
+            <ul class="mobile-menu__adress list">
+                <li class="mobile-menu__adress-item">
+                    <a class="mobile-menu__adress-link link" href="tel:+380961111111">+380 961 111 111</a>
+                </li>
+                <li class="mobile-menu__adress-item">
+                    <a class="mobile-menu__adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__social-media list">
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__social-item">
+                    <a class="mobile-menu__social-link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        
+        </div>
+        <button class="mobile-menu__close-button js-close-menu">
+            <svg class="icon" width = "18px" height="18px">
+                <use href="symbol-defs.svg#icon-close-button"></use>
+            </svg>
+        </button>
+    </div>
+
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

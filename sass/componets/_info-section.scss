@@ -4,8 +4,10 @@
     margin: 0px;
     justify-content: space-between;
   }
+  .info{
+
   
-  .info__item {
+  &__item {
     flex-basis: 270px;
   
     &::before {
@@ -36,7 +38,7 @@
     }
   }
   
-  .info__title {
+  &__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -45,8 +47,9 @@
     margin-bottom: 10px;
   }
   
-  .info__discription {
+  &__discription {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
   }
+}
