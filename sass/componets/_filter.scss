@@ -1,12 +1,8 @@
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  
-  
-  &__item:not(:last-child) {
-    margin-right: 9px;
-  }
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 9px;
   
   &__button {
     background-color: var(--team-bcg-color);

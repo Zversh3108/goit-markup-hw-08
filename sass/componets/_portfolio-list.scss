@@ -11,19 +11,22 @@
     &__item {
       outline: 1px solid #EEEEEE;
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      width: 100%;
+ 
     }
     
     &__images {
       position: relative;
       overflow: hidden;
+  
     }
     
     &__discription {
       position: absolute;
       top: 0;
       left: 0;
-      width: 370px;
-      height: 294px;
+      width: 100%;
+      height: 100%;
       background: rgba(33, 150, 243, 0.9);
       padding: 63px 24px;
       color: var(--white-color);
@@ -31,13 +34,13 @@
       font-size: 18px;
       line-height: 1.56;
       letter-spacing: 0.03em;
-      transform: translateY(294px);
+      transform: translateY(100%);
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     &__item {
       &:hover {
-        &__discription {
+        .portfolio__discription {
           transform: translateY(0);
         }
     
