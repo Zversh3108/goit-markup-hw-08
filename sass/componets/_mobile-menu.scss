@@ -6,9 +6,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background-color: white;
-padding-left: 40px;
-padding-top: 48px;
-padding-bottom: 48px;
+padding: 48px 40px;
 background-color: beige;
 
     &__nav{
@@ -52,6 +50,7 @@ background-color: beige;
     }
     &__social-media{
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     
         color: var(--brand-color);

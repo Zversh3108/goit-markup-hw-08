@@ -1,45 +1,52 @@
 .subscription{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-    gap: 20px;
-    &__form{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        gap:20px;
-
-    }
-  
-    
-    &__input {
-      width: 358px;
-      padding: 15px 16px;
-      background-color: inherit;
-      border: none;
-      outline: var(--bottom-input-border);
-      border-radius: 4px;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
-      color: var(--white-color);
-    }
-    
-    &__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  gap: 20px;
+  &__form{
+      width: 100%;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       text-align: center;
-      justify-content: center;
-      width: 200px;
-      height: 50px;
-      gap: 10px;
-      background-color: var(--brand-color);
-      color: var(--white-color);
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.88;
-      letter-spacing: 0.06em;
-    }
+      align-items: center;
+      gap:20px;
+
   }
+
+  
+  &__input {
+    width: 100%;
+    padding: 15px 16px;
+    background-color: inherit;
+    border: none;
+    outline: var(--bottom-input-border);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+  }
+  
+  &__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    gap: 10px;
+    background-color: var(--brand-color);
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .subscription{
+    padding: 0px 137px;
+    
+  }
+}

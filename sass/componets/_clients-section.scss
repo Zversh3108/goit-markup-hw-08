@@ -8,9 +8,7 @@
     gap: 30px;
     
   }
-  &__item{
-    flex-basis: calc((100% - 30px) / 2);
-  }
+
   
   &__link {
     outline: 1px solid var(--icon-defult-color);
@@ -28,5 +26,18 @@
       outline-color: var(--brand-color);
       fill: var(--brand-color);
     }
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients__item {
+   
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .clients__item {
+   
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
