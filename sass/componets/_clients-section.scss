@@ -41,3 +41,9 @@
     flex-basis: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 1600px){
+  .clients__item {
+   
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}

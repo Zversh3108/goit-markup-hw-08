@@ -1,7 +1,7 @@
 .subscription{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
  
   gap: 20px;
   &__form{
@@ -33,7 +33,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     gap: 10px;
     background-color: var(--brand-color);
@@ -44,9 +44,40 @@
     letter-spacing: 0.06em;
   }
 }
+@media screen and(max-width: 767px) {
+  .subscription{
+    
+    align-items: center;
+    
+  }
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .subscription{
     padding: 0px 137px;
     
+  }
+}
+@media screen and (min-width: 1600px)  {
+  .subscription{
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1600px)  {
+  .subscription__form{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 1600px)  {
+  .subscription__input{
+    
+    min-width: 358px;
   }
 }
