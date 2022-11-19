@@ -2,8 +2,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 450px;
-  width: 100%;
+  
+  
   transform: translate(-50%, -50%);
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,7 +30,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
   }
   &__close-button {
@@ -83,6 +83,7 @@
         text-align: center;
         letter-spacing: 0.06em;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        max-width: 200px;
       
         &:active, &:hover, &:focus {
           box-shadow: var(--button-shadow);
@@ -132,7 +133,9 @@
 .policy {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  
   
 
   gap: 30px;
@@ -144,17 +147,17 @@
     
     &__label {
       display: flex;
-      justify-content: center;
+      align-items: flex-start;
       gap: 7px;
     
       width: 100%;
-  
+      line-height: 1.16;
       font-size: 12px;
       line-height: 1.2;
       letter-spacing: 0.03em;
 
     }
-    
+   
     &__icon {
       display: inline-block;
       width: 16px;
@@ -185,8 +188,36 @@
     letter-spacing: 0.03em;
   }
 }
+@media screen and (max-width:479px) {
+  .policy__rules{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
+@media screen and (max-width:1199px) {
+  .modal{
+    width: calc(100% - 30px);
+    max-width: 450px;
+  }
+  .registration__comment-area::placeholder{
+    line-height: 1.14;
+  }
 
+}
+@media screen and (min-width:1200px) {
+  .modal{
+    max-width: 528px;
+  }
+  .modal__title{
+    line-height: 1.15;
+  }
+  .policy__rules{
+    line-height: 1.71;
+  }
+  .registration__comment-area{
+    line-height: 1.17;
+  }
 
-
-  
+}

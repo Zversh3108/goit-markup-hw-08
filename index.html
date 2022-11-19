@@ -113,7 +113,12 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__member-photo" src="images/product_designer_photo.jpg" alt="фотографія проект дизайнера">
+                        <picture>
+                            <source srcset="images/product_designer_photo-450px1x.png" media="(max-width:767px)"/>
+                            <source srcset="images/product_designer_photo-354px1x.png" media="(min-width:768px) and (max-width:1199px),"/>
+                            <source srcset="images/product_designer_photo-270px1x.png" media="(min-width:1200px)"/>
+                            <img class="team__member-photo" src="images/product_designer_photo-450px1x.png" alt="фотографія проект дизайнера">
+                        </picture>
                         <div class="team__content">
                             <h3 class="team__member">Ігор Дем'яненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
@@ -420,8 +425,11 @@
                         <label class="policy__label" for="policy">
                             <input  class = "policy__checkbox" type="checkbox" name="policy-tick" id="policy">
                             <span class="policy__icon"></span>
+                            <span class="policy__rules">
                             Погоджуюся з розсилкою та приймаю   
                             <a class="policy__contract" href="#">Умови договору</a>
+                            </span>
+                           
                         </label>
                         <button type="submit" class="registration__button button">Відправити</button>   
                 </div>           
