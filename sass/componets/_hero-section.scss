@@ -17,24 +17,44 @@
   }
  
   &__title {
-    margin-bottom: 30px;
+    margin: 0px auto 30px auto;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
-    text-align: center;
+
+    width: 100%;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+   
+
   }
   
   &__button {
     align-items: center;
-    text-align: center;
+    
     background-color: var(--brand-color);
     color: var(--white-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+  }
+}
+@media screen and (max-width:1199px) {
+  .hero__title{
+    
+   max-width: 360px;
+   font-size: 26px;
+   line-height: 1.6;
+   
+  }
+}
+@media screen and (min-width:1200px) {
+  .hero__title{
+    
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+   
   }
 }
