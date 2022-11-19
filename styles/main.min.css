@@ -947,7 +947,6 @@ img {
   height: 100%;
   background-color: white;
   padding: 48px 40px;
-  background-color: beige;
 }
 .mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 32px;
