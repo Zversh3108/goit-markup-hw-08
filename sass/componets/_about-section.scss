@@ -1,6 +1,8 @@
 .about{
 padding-top: 0px;
-display: none;
+
+
+
 
   &__list{
     display: flex;
@@ -31,18 +33,9 @@ display: none;
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 1199px) {
+
   .about{
-    display: flex;
-    gap: 30px;
-    
-    
-  }
-}
-@media screen and (min-width: 1600px) {
-  .about__item{
-  flex-basis: calc((100% - 60px) / 3);
-    
-    
+    display: none;
   }
 }

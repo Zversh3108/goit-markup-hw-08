@@ -1,6 +1,9 @@
 .mobile-menu{
 position: fixed;
 display: none;
+
+flex-direction: column;
+justify-content: space-between;
 top: 0;
 left: 0;
 width: 100%;
@@ -10,7 +13,7 @@ padding: 48px 40px;
 background-color: beige;
 
     &__nav{
-        margin-bottom: 306px;
+        
 
         &-item:not(:last-child){
             margin-bottom: 32px;
@@ -87,5 +90,5 @@ background-color: beige;
 
 
     .is-open{
-        display: block; 
+        display: flex;
     }
