@@ -53,31 +53,27 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription{
     padding: 0px 137px;
     
   }
 }
-@media screen and (min-width: 1600px)  {
+@media screen and (min-width: 1199px)  {
   .subscription{
     padding: 0px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-}
-@media screen and (min-width: 1600px)  {
+  .subscription__input{
+    
+    min-width: 358px;
+  }
   .subscription__form{
     
     display: flex;
     flex-direction: row;
     gap: 12px;
-  }
-}
-@media screen and (min-width: 1600px)  {
-  .subscription__input{
-    
-    min-width: 358px;
   }
 }
