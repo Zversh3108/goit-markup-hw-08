@@ -36,7 +36,6 @@
   align-items: center;
   gap:8px;
   margin-bottom: 60px;
-  
 }  
 
 
@@ -84,11 +83,12 @@
   .subscription{
     align-items: center;
   }
-  
 }
 
 @media screen and (min-width: 1199px)  {
-  
+  .adress{
+    margin-bottom: 0px;
+  }
   .bottom__logo-adress-media{
   display: flex;
   flex-direction: row;
@@ -102,7 +102,6 @@
   }
   .bottom-adress{
     align-items: flex-start;
-    margin-bottom: 0px;
    }
   .bottom__social-media{
    
@@ -113,8 +112,5 @@
     flex-direction: column;
     align-items: flex-start;
    }
-   .adress{
-    margin-bottom: 0px;
-  }
 }
 }
