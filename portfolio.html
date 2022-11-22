@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -19,10 +19,10 @@
 
                 <ul class="nav__list list">
                     <li class="nav__item">
-                        <a class="nav__link  link "  href="/index.html">Студія</a>
+                        <a class="nav__link nav__link--active-page link "  href="#">Студія</a>
                     </li >
                     <li class="nav__item">
-                        <a class="nav__link link nav__link--active-page"  href="/portfolio.html">Портфоліо</a>
+                        <a class="nav__link link" href="portfolio.html">Портфоліо</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link link" href="#">Контакти</a>
@@ -58,31 +58,32 @@
     <section class="portfolio section">
         <div class="container">
             <ul class="filter list">
-                <li class="filter__item"><button class="filter__button button" portfolio__type="button">Усі</button></li>
-                <li class="filter__item"><button class="filter__button button" portfolio__type="button">Веб-сайти</button></li>
-                <li class="filter__item"><button class="filter__button button" portfolio__type="button">Додатки</button></li>
-                <li class="filter__item"><button class="filter__button button" portfolio__type="button">Дизайн</button></li>
-                <li class="filter__item"><button class="filter__button button" portfolio__type="button">Маркетинг</button></li>         
+                <li class="filter__item"><button class="filter__button button" type="button">Усі</button></li>
+                <li class="filter__item"><button class="filter__button button" type="button">Веб-сайти</button></li>
+                <li class="filter__item"><button class="filter__button button" type="button">Додатки</button></li>
+                <li class="filter__item"><button class="filter__button button" type="button">Дизайн</button></li>
+                <li class="filter__item"><button class="filter__button button" type="button">Маркетинг</button></li>         
             </ul>
             <ul class="portfolio__list list">
                 <li class="portfolio__item">
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-1-450px1x.png 1x, 
-                                images/portfolio-img-1-450px2x.png 2x" 
+                                images/portfolio-img-1-450px1x.webp 1x, 
+                                images/portfolio-img-1-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
-                            <source srcset="
-                                images/portfolio-img-1-354px1x.png 1x,
-                                images/portfolio-img-1-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                                <source srcset="
+                                images/portfolio-img-1-370px1x.webp 1x, 
+                                images/portfolio-img-1-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-1-370px1x.png 1x, 
-                                images/portfolio-img-1-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                            <img src="images/portfolio-img-1-450px1x.png" alt="Фото ноутбука з відкритою веб-сторінкою">
+                                images/portfolio-img-1-354px1x.webp 1x,
+                                images/portfolio-img-1-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+                            <img src="images/portfolio-img-1-450px1x.webp" alt="Фото ноутбука з відкритою веб-сторінкою">
                             </picture>
                             <div class="portfolio__discription">
                                 <p>
@@ -99,20 +100,21 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-2-450px1x.png 1x, 
-                                images/portfolio-img-2-450px2x.png 2x" 
+                                images/portfolio-img-2-450px1x.webp 1x, 
+                                images/portfolio-img-2-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
+                                <source srcset="
+                                images/portfolio-img-2-370px1x.webp 1x, 
+                                images/portfolio-img-2-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
+                                
                             <source srcset="
-                                images/portfolio-img-2-354px1x.png 1x,
-                                images/portfolio-img-2-354px2x.png 2x"
+                                images/portfolio-img-2-354px1x.webp 1x,
+                                images/portfolio-img-2-354px2x.webp 2x"
                                 media="(min-width: 768px)">
 
-                            <source srcset="
-                                images/portfolio-img-2-370px1x.png 1x, 
-                                images/portfolio-img-2-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-2.png" alt="Постер двух баскетболістів">
+                    <img src="images/portfolio-img-2.webp" alt="Постер двух баскетболістів">
                     </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -129,20 +131,22 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-3-450px1x.png 1x, 
-                                images/portfolio-img-3-450px2x.png 2x" 
+                                images/portfolio-img-3-450px1x.webp 1x, 
+                                images/portfolio-img-3-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
-                            <source srcset="
-                                images/portfolio-img-3-354px1x.png 1x,
-                                images/portfolio-img-3-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                                <source srcset="
+                                images/portfolio-img-3-370px1x.webp 1x, 
+                                images/portfolio-img-3-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-3-370px1x.png 1x, 
-                                images/portfolio-img-3-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                            <img src="images/portfolio-img-3.png" alt="Логотипом ресторану з рибою">
+                                images/portfolio-img-3-354px1x.webp 1x,
+                                images/portfolio-img-3-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+
+                            <img src="images/portfolio-img-3.webp" alt="Логотипом ресторану з рибою">
                             </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -159,20 +163,21 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-4-450px1x.png 1x, 
-                                images/portfolio-img-4-450px2x.png 2x" 
+                                images/portfolio-img-4-450px1x.webp 1x, 
+                                images/portfolio-img-4-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
-                            <source srcset="
-                                images/portfolio-img-4-354px1x.png 1x,
-                                images/portfolio-img-4-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                                <source srcset="
+                                images/portfolio-img-4-370px1x.webp 1x, 
+                                images/portfolio-img-4-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-4-370px1x.png 1x, 
-                                images/portfolio-img-4-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-4.png" alt="Фото навушників">
+                                images/portfolio-img-4-354px1x.webp 1x,
+                                images/portfolio-img-4-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+                    <img src="images/portfolio-img-4.webp" alt="Фото навушників">
                     </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -189,20 +194,21 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-5-450px1x.png 1x, 
-                                images/portfolio-img-5-450px2x.png 2x" 
+                                images/portfolio-img-5-450px1x.webp 1x, 
+                                images/portfolio-img-5-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
-                            <source srcset="
-                                images/portfolio-img-5-354px1x.png 1x,
-                                images/portfolio-img-5-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                                <source srcset="
+                                images/portfolio-img-5-370px1x.webp 1x, 
+                                images/portfolio-img-5-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-5-370px1x.png 1x, 
-                                images/portfolio-img-5-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-5.png" alt="Фото двох об'ємних прямокутних фігур схожих на коробки">
+                                images/portfolio-img-5-354px1x.webp 1x,
+                                images/portfolio-img-5-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+                    <img src="images/portfolio-img-5.webp" alt="Фото двох об'ємних прямокутних фігур схожих на коробки">
                         </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -219,20 +225,21 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-6-450px1x.png 1x, 
-                                images/portfolio-img-6-450px2x.png 2x" 
+                                images/portfolio-img-6-450px1x.webp 1x, 
+                                images/portfolio-img-6-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
-                            <source srcset="
-                                images/portfolio-img-6-354px1x.png 1x,
-                                images/portfolio-img-6-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                                <source srcset="
+                                images/portfolio-img-6-370px1x.webp 1x, 
+                                images/portfolio-img-6-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-6-370px1x.png 1x, 
-                                images/portfolio-img-6-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-6.png" alt="Зображення монітору ПК з відкритим веб-сайтом">
+                                images/portfolio-img-6-354px1x.webp 1x,
+                                images/portfolio-img-6-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+                    <img src="images/portfolio-img-6.webp" alt="Зображення монітору ПК з відкритим веб-сайтом">
                     </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -249,20 +256,21 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-7-450px1x.png 1x, 
-                                images/portfolio-img-7-450px2x.png 2x" 
+                                images/portfolio-img-7-450px1x.webp 1x, 
+                                images/portfolio-img-7-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
-                            
-                            <source srcset="
-                                images/portfolio-img-7-354px1x.png 1x,
-                                images/portfolio-img-7-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                           
+                                <source srcset="
+                                images/portfolio-img-7-370px1x.webp 1x, 
+                                images/portfolio-img-7-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-7-370px1x.png 1x, 
-                                images/portfolio-img-7-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-7.png" alt="Фото відритого журналу">
+                                images/portfolio-img-7-354px1x.webp 1x,
+                                images/portfolio-img-7-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+                    <img src="images/portfolio-img-7.webp" alt="Фото відритого журналу">
                     </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -279,20 +287,21 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-8-450px1x.png 1x, 
-                                images/portfolio-img-8-450px2x.png 2x" 
+                                images/portfolio-img-8-450px1x.webp 1x, 
+                                images/portfolio-img-8-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
                             
                             <source srcset="
-                                images/portfolio-img-8-354px1x.png 1x,
-                                images/portfolio-img-8-354px2x.png 2x"
-                                media="(min-width: 768px)">
+                            images/portfolio-img-8-370px1x.webp 1x, 
+                            images/portfolio-img-8-370px2x.webp 2x" 
+                            media="(min-width: 1200px)">
 
                             <source srcset="
-                                images/portfolio-img-8-370px1x.png 1x, 
-                                images/portfolio-img-8-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-8.png" alt=" Фотографія бірки проекту">
+                                images/portfolio-img-8-354px1x.webp 1x,
+                                images/portfolio-img-8-354px2x.webp 2x"
+                                media="(min-width: 768px)">
+
+                    <img src="images/portfolio-img-8.webp" alt=" Фотографія бірки проекту">
                     </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -309,20 +318,19 @@
                     <div class="portfolio__images">
                         <picture>
                             <source srcset="
-                                images/portfolio-img-9-450px1x.png 1x, 
-                                images/portfolio-img-9-450px2x.png 2x" 
+                                images/portfolio-img-9-450px1x.webp 1x, 
+                                images/portfolio-img-9-450px2x.webp 2x" 
                                 media="(max-width: 767px)">
-                            
                             <source srcset="
-                                images/portfolio-img-9-354px1x.png 1x,
-                                images/portfolio-img-9-354px2x.png 2x"
+                                images/portfolio-img-9-370px1x.webp 1x, 
+                                images/portfolio-img-9-370px2x.webp 2x" 
+                                media="(min-width: 1200px)">
+                            <source srcset="
+                                images/portfolio-img-9-354px1x.webp 1x,
+                                images/portfolio-img-9-354px2x.webp 2x"
                                 media="(min-width: 768px)">
 
-                            <source srcset="
-                                images/portfolio-img-9-370px1x.png 1x, 
-                                images/portfolio-img-9-370px2x.png 2x" 
-                                media="(min-width: 1200px)">
-                    <img src="images/portfolio-img-9.png" alt="Користувач друкує на ноутбуці">
+                    <img src="images/portfolio-img-9.webp" alt="Користувач друкує на ноутбуці">
                     </picture>
                     <div class="portfolio__discription">
                         <p>
@@ -341,6 +349,7 @@
     </main>
     <footer class="footer">
         <div class="bottom container ">
+            <div class="bottom__logo-adress-media">
             <div class="bottom__logo-adress">
                 <a lang="en" class="bottom__logo link" href="/">Web<span class="bottom__logo-word">Studio</span></a>
                 <address>
@@ -388,7 +397,8 @@
                             </svg>
                         </a>
                     </li>
-                </ul>        
+                </ul>      
+            </div>  
             </div>
             <div class="subscription">
                 <h3 class= "bottom__title">Підпишіться на розсилку</h3>
@@ -404,53 +414,52 @@
         </div>    
     </footer>
     <div class="mobile-menu js-menu-container">
-        <div class="container">
-            <nav class="mobile-menu__nav">  
-                    <ul class = "mobile-menu__nav-list list">
-                        <li class="mobile-menu__nav-item">
-                            <a class="mobile-menu__nav-link link" href="">Студія</a>
-                        </li>
-                        <li class="mobile-menu__nav-item">
-                            <a class="mobile-menu__nav-link link" href="portfolio.html">Портфоліо</a>
-                        </li>
-                        <li class="mobile-menu__nav-item">
-                            <a class="mobile-menu__nav-link link" href="">Контакти</a>
-                        </li>
-                    </ul>
-            </nav>
-            <ul class="mobile-menu__adress list">
-                <li class="mobile-menu__adress-item">
-                    <a class="mobile-menu__adress-link mobile-menu__adress-link--brand-color link" href="tel:+380961111111">+380 961 111 111</a>
-                </li>
-                <li class="mobile-menu__adress-item">
-                    <a class="mobile-menu__adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__social-media list">
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">Instagram</a> 
-                </li><span class= "mobile-menu__vertical-el">|</span>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">Twitter</a>
-                </li><span class= "mobile-menu__vertical-el">|</span>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">Facebook</a>
-                </li><span class= "mobile-menu__vertical-el">|</span>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">LinkedIn</a>
-
-                </li>
-            </ul>
         
-        </div>
-        <button class="mobile-menu__close-button js-close-menu">
-            <svg class="icon" width = "18px" height="18px">
-                <use href="symbol-defs.svg#icon-close-button"></use>
-            </svg>
-        </button>
+        <nav class="mobile-menu__nav">  
+                <ul class = "mobile-menu__nav-list list">
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link link" href="">Студія</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link link" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a class="mobile-menu__nav-link link" href="">Контакти</a>
+                    </li>
+                </ul>
+        </nav>
+        <div>
+        <ul class="mobile-menu__adress list">
+            <li class="mobile-menu__adress-item">
+                <a class="mobile-menu__adress-link mobile-menu__adress-link--brand-color link" href="tel:+380961111111">+380 961 111 111</a>
+            </li>
+            <li class="mobile-menu__adress-item">
+                <a class="mobile-menu__adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu__social-media list">
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Instagram</a> 
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">LinkedIn</a>
+            </li>
+        </ul>
     </div>
-
-    </div>
+    
+    
+    <button class="mobile-menu__close-button js-close-menu">
+        <svg class="icon" width = "18px" height="18px">
+            <use href="symbol-defs.svg#icon-close-button"></use>
+        </svg>
+    </button>
+</div>
     <script defer src="js/mobile-menu.js"></script>
     </body>
     </html>
