@@ -21,9 +21,13 @@ img {
 .section {
   padding: 60px 0px;
 }
+@media screen and (min-width:1200px){
+  .section{
+    padding: 94px 0px;
+  }
+}
 
 .container {
-  
   margin: 0px auto;
   padding: 0px 15px;
   
@@ -53,6 +57,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width:1200px){
+  .section__title{
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .link {

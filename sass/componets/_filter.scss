@@ -1,7 +1,7 @@
 .filter {
   display: flex;
   margin-bottom: 40px;
-  gap: 9px;
+  gap: 8px;
 
 &__button {
   background-color: var(--team-bcg-color);
@@ -31,7 +31,13 @@
 
 @media screen and (min-width: 768px) {
   .filter {
-   flex-wrap: nowrap;
-   justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+  margin-bottom: 50px;
   }
 }
