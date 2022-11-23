@@ -13,6 +13,7 @@
 
   &__logo-adress{
     text-align: center;
+    padding-bottom: 60px;
 }
 
 
@@ -74,6 +75,9 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px)  {
+  .bottom__logo-adress{
+    padding-bottom: 0px;
+  }
   .bottom__logo-adress-media{
    justify-content: center;
     display: flex;
